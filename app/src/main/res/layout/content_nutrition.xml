@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_nutrition"
+    android:background="#dbd2c8">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:columnCount="3"
+        android:alignmentMode="alignBounds"
+        android:rowCount="24"
+        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:id="@+id/titleView"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal|center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#741616"
+            android:textStyle="bold"
+            android:layout_rowWeight="0"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textSize="40sp"
+            android:textIsSelectable="false"
+            android:layout_columnWeight="1" />
+
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:id = "@+id/description_frag"
+            android:name = "com.example.shakabreaux.nutritionguide.NutritionFragment"
+            android:layout_columnWeight="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spacebar1"
+            android:layout_columnSpan="3"
+            android:background="#a69c43"
+            android:layout_columnWeight="3"
+            android:singleLine="false"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/rmrcalc"
+            android:id="@+id/RMRtext"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:layout_rowWeight="0"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_columnWeight="1"
+            android:textColor="#741616" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_columnWeight="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bdtext"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_rowWeight="0"
+            android:text="YOUR BODYWEIGHT"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RMR (IN CALORIES)"
+            android:id="@+id/RMR1"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="1"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/bdInput"
+            android:layout_rowWeight="1"
+            android:background="#e2df95"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:layout_gravity="fill"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x 10 ="
+            android:id="@+id/arith1"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#0c540f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RMRoutput"
+            android:layout_row="6"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:background="#966939"
+            android:layout_rowWeight="1"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="2. Calculate daily activity burn."
+            android:id="@+id/DABtitle"
+            android:layout_row="8"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:layout_rowWeight="0"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_columnWeight="1"
+            android:textColor="#741616" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rmrtext"
+            android:layout_row="9"
+            android:layout_column="0"
+            android:layout_rowWeight="0"
+            android:text="YOUR RMR"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAILY ACTIVITY BURN"
+            android:id="@+id/DABtext"
+            android:layout_row="9"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="1"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/RMRinput"
+            android:layout_rowWeight="1"
+            android:background="#e2df95"
+            android:layout_row="10"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal|fill"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x 20% ="
+            android:id="@+id/arith2"
+            android:layout_row="10"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#0c540f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DABoutput"
+            android:layout_row="10"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:background="#966939"
+            android:layout_rowWeight="1"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="3. Add calories required for your excercise needs."
+            android:id="@+id/calTitle"
+            android:layout_row="12"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:layout_rowWeight="0"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_columnWeight="1"
+            android:textColor="#741616" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="13"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_columnWeight="3"
+            android:columnCount="5"
+            android:rowCount="2"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RMR"
+                android:id="@+id/RMRtext2"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_columnSpan="1"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAILY ACTIVITY BURN"
+                android:id="@+id/DABtext2"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_columnSpan="1"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENERGY AMOUNT"
+                android:id="@+id/energyText"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:layout_columnSpan="1"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:layout_gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/RMRinput2"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:background="#e2df95"
+                android:layout_rowWeight="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:gravity="center"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/arith3"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#0c540f"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DABinput"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:background="#e2df95"
+                android:layout_rowWeight="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 600 ="
+                android:id="@+id/arith4"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="#0c540f"
+                android:layout_columnWeight="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/energyOutput"
+                android:layout_row="1"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:background="#966939"
+                android:layout_rowWeight="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </GridLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="4. Energy amount determines nutrition level."
+            android:id="@+id/energyTitle"
+            android:layout_row="14"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:layout_rowWeight="0"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_columnWeight="1"
+            android:textColor="#741616" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_row="15"
+            android:layout_column="0"
+            android:layout_rowWeight="0"
+            android:text="YOUR ENERGY AMOUNT"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_row="15"
+            android:layout_column="1"
+            android:layout_rowWeight="0"
+            android:text="NUTRITION LEVEL"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/energy1"
+            android:layout_rowWeight="1"
+            android:background="#e2df95"
+            android:layout_row="16"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:text="1,800 - 2,399"
+            android:layout_gravity="center_horizontal|fill"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0c540f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/nutrit1"
+            android:layout_rowWeight="1"
+            android:background="#e2df95"
+            android:layout_row="16"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:text="Level 1 - 1,800 Calories/Day"
+            android:layout_gravity="center_horizontal|fill"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_columnSpan="2"
+            android:textStyle="bold"
+            android:textColor="#0c540f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/energy2"
+            android:layout_rowWeight="1"
+            android:background="#b4b174"
+            android:layout_row="17"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:text="2,400 - 2,999"
+            android:layout_gravity="center_horizontal|fill"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0c540f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/nutrit2"
+            android:layout_rowWeight="1"
+            android:background="#b4b174"
+            android:layout_row="17"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:text="Level 2 - 2,400 Calories/Day"
+            android:layout_gravity="center_horizontal|fill"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_columnSpan="2"
+            android:textStyle="bold"
+            android:textColor="#0c540f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/energy3"
+            android:layout_rowWeight="1"
+            android:background="#a88326"
+            android:layout_row="18"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:text="3,000+"
+            android:layout_gravity="center_horizontal|fill"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0c540f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/nutrit3"
+            android:layout_rowWeight="1"
+            android:background="#a88326"
+            android:layout_row="18"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:text="Level 3 - 3,000 Calories/Day"
+            android:layout_gravity="center_horizontal|fill"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_columnSpan="2"
+            android:textStyle="bold"
+            android:textColor="#0c540f" />
+
+        <TextView
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="YOUR NUTRITION LEVEL:"
+            android:id="@+id/nutritionTitle"
+            android:layout_row="20"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:layout_rowWeight="0"
+            android:layout_columnWeight="1"
+            android:textColor="#741616"
+            android:layout_marginBottom="5dp"
+            android:gravity="center" />
+
+        <TextView
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/nutritionOutput"
+            android:layout_row="21"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:layout_rowWeight="0"
+            android:layout_columnWeight="1"
+            android:textColor="#741616"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Energy Amount"
+            android:id="@+id/calc"
+            android:layout_row="22"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="1"
+            android:background="#a18686"
+            android:layout_gravity="center_vertical"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/reset"
+            android:layout_row="22"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="1"
+            android:background="#a18686"
+            android:layout_gravity="center_vertical"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See Nutrition Plan"
+            android:id="@+id/plan"
+            android:layout_row="22"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="1"
+            android:background="#a18686"
+            android:layout_gravity="center_vertical"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+    </GridLayout>
+</RelativeLayout>
+

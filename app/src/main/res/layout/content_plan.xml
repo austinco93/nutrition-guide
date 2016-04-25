@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shakabreaux.nutritionguide.PlanActivity"
+    tools:showIn="@layout/activity_plan"
+    android:background="#dbd2c8">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="10"
+        android:rowCount="20">
+
+        <TextView
+            android:text="Level 1 Plan"
+            android:id="@+id/level3Title"
+            android:layout_column="0"
+            android:textColor="#741616"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="10"
+            android:layout_columnWeight="10"
+            android:layout_row="0"
+            android:layout_gravity="fill_horizontal|center_horizontal"
+            android:gravity="center|center_vertical" />
+
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="10"
+            android:layout_columnWeight="10"
+            android:layout_row="1"
+            android:gravity="center"
+            android:id = "@+id/plan_frag"
+            android:name = "com.example.shakabreaux.nutritionguide.PlanFragment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/space"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_columnSpan="10"
+            android:background="#a69c43"
+            android:layout_columnWeight="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Based off of 1,800 calories/day diet. (1 box = 1 serving size)"
+            android:id="@+id/textView3"
+            android:textSize="17sp"
+            android:textStyle="bold|italic"
+            android:textColor="#741616"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginBottom="10dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:layout_rowSpan="5"
+            android:layout_rowWeight="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Protein"
+                    android:id="@+id/proteinBtn"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:textColor="#0c540f"
+                    android:layout_margin="5dp"
+                    android:background="#e2df95" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prot1"
+                    android:background="#772b2b"
+                    android:layout_margin="5dp"
+                    android:layout_weight=".5" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prot2"
+                    android:background="#772b2b"
+                    android:layout_margin="5dp"
+                    android:layout_weight=".5" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prot3"
+                    android:background="#772b2b"
+                    android:layout_margin="5dp"
+                    android:layout_weight=".5" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prot4"
+                    android:background="#772b2b"
+                    android:layout_margin="5dp"
+                    android:layout_weight=".5" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prot5"
+                    android:background="#772b2b"
+                    android:layout_margin="5dp"
+                    android:layout_weight=".5" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Dairy"
+                    android:id="@+id/dairyBtn"
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:textColor="#0c540f"
+                    android:background="#e2df95"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dairy1"
+                    android:background="#97a7c6"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dairy2"
+                    android:background="#97a7c6"
+                    android:layout_margin="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Fruits"
+                    android:id="@+id/fruitBtn"
+                    android:layout_row="7"
+                    android:layout_column="0"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:textColor="#0c540f"
+                    android:background="#e2df95"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fruit1"
+                    android:background="#62348d"
+                    android:layout_margin="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Vegitables"
+                    android:id="@+id/vegiBtn"
+                    android:layout_row="8"
+                    android:layout_column="0"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:textColor="#0c540f"
+                    android:background="#e2df95"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vegi1"
+                    android:background="#3d9e24"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vegi2"
+                    android:background="#3d9e24"
+                    android:layout_margin="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Fats"
+                    android:id="@+id/fatBtn"
+                    android:layout_row="9"
+                    android:layout_column="0"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:textColor="#0c540f"
+                    android:background="#e2df95"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fat1"
+                    android:background="#d5de21"
+                    android:layout_margin="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Carbs"
+                    android:id="@+id/carbBtn"
+                    android:layout_row="10"
+                    android:layout_column="0"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:textColor="#0c540f"
+                    android:background="#e2df95"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/carb1"
+                    android:background="#965432"
+                    android:layout_margin="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Snacks"
+                    android:id="@+id/snackBtn"
+                    android:layout_row="11"
+                    android:layout_column="0"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:textColor="#0c540f"
+                    android:background="#e2df95"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/snack1"
+                    android:background="#ef5400"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/snack2"
+                    android:background="#ef5400"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/snack3"
+                    android:background="#ef5400"
+                    android:layout_margin="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Condiments"
+                    android:id="@+id/condBtn"
+                    android:layout_row="12"
+                    android:layout_column="0"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:textColor="#0c540f"
+                    android:background="#e2df95"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cond1"
+                    android:background="#f80f1f"
+                    android:layout_margin="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clickgrp"
+                    android:id="@+id/textView6"
+                    android:textSize="17sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#741616"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_span="10"
+                    android:layout_marginTop="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="150px"
+                    android:layout_gravity="left|right|top" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return to Nutrition Calculator"
+                    android:id="@+id/returnBtn"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_span="0"
+                    android:layout_weight="1"
+                    android:background="#31cba7" />
+            </TableRow>
+
+        </TableLayout>
+
+    </GridLayout>
+
+</RelativeLayout>

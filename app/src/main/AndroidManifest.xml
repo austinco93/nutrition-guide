@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shakabreaux.nutritionguide">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".NutritionActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PlanActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_plan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Plan2Activity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_plan2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Plan3Activity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_plan3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProteinActivity"
+            android:label="@string/title_activity_protein"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FatActivity"
+            android:label="@string/title_activity_fat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CarbActivity"
+            android:label="@string/title_activity_carb"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DairyActivity"
+            android:label="@string/title_activity_dairy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FruitActivity"
+            android:label="@string/title_activity_fruit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VeggieActivity"
+            android:label="@string/title_activity_veggie"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SnacksActivity"
+            android:label="@string/title_activity_snacks"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CondActivity"
+            android:label="@string/title_activity_cond"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

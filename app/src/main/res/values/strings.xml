@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">Nutrition Guide</string>
+    <string name="action_settings">Settings</string>
+    <string name="descrip">This guide is based off of the P90x nutrition plan. Just enter body weight then click calculate
+                            energy amount. After your nutrition level has been determined click see plan to view the customized
+                            nutrition plan. </string>
+    <string name="clickgrp">Click on different categories to view food options</string>
+    <string name="rmrcalc">1. Calculate your resting metabolic rate (RMR):</string>
+    <string name="bodyweight">Your Body Weight(lbs) </string>
+    <string name="Protein">Proteins</string>
+    <string name="Dairy">Dairy</string>
+    <string name="Fruits">Fruits</string>
+    <string name="Vegitables">Vegitables</string>
+    <string name="Fats">Fats</string>
+    <string name="Carbs">Carbohydrates</string>
+    <string name="Snacks">Snacks</string>
+    <string name="Condiments">Condiments</string>
+    <string name="title_activity_plan">activity_plan</string>
+    <string name="title_activity_plan2">Plan2Activity</string>
+    <string name="title_activity_plan3">Plan3Activity</string>
+    <string name="title_activity_protein">ProteinActivity</string>
+    <string name="retPlanBtn">Return to Plan</string>
+
+    <string name="protTitle">Proteins</string>
+    <string name="protdescrip">Each serving = 100 calories</string>
+    <string name="chicken">3 oz. Boneless, skinless chicken or turkey breast</string>
+    <string name="egg">6 Egg whites</string>
+    <string name="fish">3 oz. Fish</string>
+    <string name="ham">3 oz. Ham slices</string>
+    <string name="pork">3 oz. Pork tenderloin</string>
+    <string name="proteinpowder">1/3 Whey protein powder</string>
+    <string name="red">3 oz. Red meat</string>
+    <string name="soyburg">1 Soy Burger</string>
+    <string name="tofu">3 oz. Tofu</string>
+    <string name="tuna">3 oz. Tuna</string>
+    <string name="veggiedog">1 Veggie dog</string>
+    <string name="title_activity_fat">FatActivity</string>
+
+    <string name="fatTitle">Fats</string>
+    <string name="fatdescrip">Each serving = 120 calories</string>
+    <string name="avocado">3 oz. Avocado</string>
+    <string name="canola">1 Tbsp. Canola Oil</string>
+    <string name="flax">1 Tbsp. Flaxseed Oil</string>
+    <string name="oliveoil">1 Tbsp Olive oil</string>
+    <string name="olive">4 oz. Olives</string>
+
+    <string name="carbTitle">Carbohydrates</string>
+    <string name="carbdescrip">Each serving = 200 calories</string>
+    <string name="bagel">1 Medium Bagel</string>
+    <string name="bakedbeans">1 Cup Baked Beans</string>
+    <string name="beans">1 Cup Beans</string>
+    <string name="bran">1 Bran Muffin</string>
+    <string name="bread">2 Slices Bread</string>
+    <string name="cereal">1 Cup Cereal, whole grain</string>
+    <string name="couscous">1 Cup Couscous</string>
+    <string name="engmuffin">2 English muffing halves</string>
+    <string name="hummus">1 Cup Hummus</string>
+    <string name="lentil">1 Cup Lentils</string>
+    <string name="oatmeal">1 Cup Oatmeal</string>
+    <string name="pancakes">3 Pancakes</string>
+    <string name="pasta">1 Cup Pasta or Noodles</string>
+    <string name="pita">1 Large Pita</string>
+    <string name="potato">1 Medium Potato</string>
+    <string name="quinoa">1 Cup Quinoa</string>
+    <string name="rice">1 Cup Rice, brown or wild</string>
+    <string name="sweetpotato">1 Medium Sweet potato</string>
+    <string name="tortcorn">3 Corn tortillas</string>
+    <string name="tortwheat">1 Large Whole wheat torillas</string>
+    <string name="title_activity_carb">CarbActivity</string>
+    <string name="title_activity_dairy">DairyActivity</string>
+
+    <string name="dairyTitle">Dairy</string>
+    <string name="dairydescrip">Each serving = 120 calories</string>
+    <string name="cheese">1 oz. Cheese, low fat</string>
+    <string name="cottage">1 Cup Cottage cheese</string>
+    <string name="feta">1 oz. Feta cheese</string>
+    <string name="goat">1 oz. Goat cheese, semisoft</string>
+    <string name="mozz">1-1/2 oz. Mozzarella, part-skim</string>
+    <string name="parm">1 oz. Parmesan cheese</string>
+    <string name="skim">8 oz. Skim milk</string>
+    <string name="soycheese">1 oz. Soy Cheese</string>
+    <string name="soymilk">8 oz. Soy milk</string>
+    <string name="yogurt">8 oz. Yogurt, plain nonfat</string>
+
+    <string name="fruitTitle">Fruit</string>
+    <string name="fruitdescrip">Each serving = 100 calories</string>
+    <string name="apple">1 Medium Apple</string>
+    <string name="apricot">1 Cup Apricots</string>
+    <string name="banana">1 Medium Banana</string>
+    <string name="cant">1/4 Medium Cantaloupe</string>
+    <string name="cherry">1 Cup Cherries</string>
+    <string name="dried">1 oz. Dried fruit</string>
+    <string name="grapefruit">1 Medium Grapefruit</string>
+    <string name="grape">1 Cup Grapes</string>
+    <string name="kiwi">1 Cup Kiwi</string>
+    <string name="mango">1/2 Medium Mango</string>
+    <string name="nectarine">1 Medium Nectarine</string>
+    <string name="orange">1 Large Orange</string>
+    <string name="papaya">1/2 Medium Papaya</string>
+    <string name="peach">1 Medium Peach</string>
+    <string name="pear">1 Medium Pear</string>
+    <string name="raspberry">1 Cup Raspberries</string>
+    <string name="strawberry">2 Cups Strawberries, sliced</string>
+    <string name="tang">1 Medium Tangerine</string>
+    <string name="watermelon">1 Cup Watermelon</string>
+
+    <string name="veggieTitle">Vegitables</string>
+    <string name="veggiedescrip">1 serving = 2 cups (or 1 cup cooked) = 50 calories</string>
+    <string name="aspara">Asparagus</string>
+    <string name="beet">Beets</string>
+    <string name="bok">Bok Choy</string>
+    <string name="broc">Broccoli</string>
+    <string name="bruss">Brussel Sprouts</string>
+    <string name="cabb">Cabbage</string>
+    <string name="caul">Cauliflower</string>
+    <string name="cel">Celery</string>
+    <string name="collard">Collard Greens</string>
+    <string name="carr">Carrots</string>
+    <string name="cucu">Cucumber</string>
+    <string name="eggplant">Eggplant</string>
+    <string name="kale">Kale</string>
+    <string name="lett">Lettuce</string>
+    <string name="marinara">Marinara Sauce</string>
+    <string name="mush">Mushrooms</string>
+    <string name="peas">Peas</string>
+    <string name="pepp">Peppers</string>
+    <string name="spinach">Spinach</string>
+    <string name="sprouts">Sprouts</string>
+    <string name="squash">Squash</string>
+    <string name="stringb">String beans</string>
+    <string name="tomatoes">Tomatoes</string>
+
+    <string name="snackTitle">Snacks</string>
+    <string name="snackdescrip">1 serving = 100 calories</string>
+    <string name="snackcheese">1 oz. Cheese, low-fat</string>
+    <string name="snackcottage">8 oz. Cottage cheese</string>
+    <string name="snackdried">1 oz. Dried fruit</string>
+    <string name="minirice">12 Mini rice cakes</string>
+    <string name="protbar">1 Performance Protein bar</string>
+    <string name="peanutcel">1 Tbsp Peanutbutter with celery sicks</string>
+    <string name="soynuts">2 oz. Soy nuts</string>
+    <string name="stringc">1-1/2 oz. String cheese</string>
+    <string name="turkeyjerky">1 oz. Turkey Jerky</string>
+    <string name="gurt">8 oz. Yogurt, plain nonfat</string>
+    <string name="title_activity_fruit">FruitActivity</string>
+    <string name="title_activity_veggie">VeggieActivity</string>
+    <string name="title_activity_snacks">SnacksActivity</string>
+
+    <string name="condTitle">Condiments</string>
+    <string name="conddescrip">1 serving = 50 Calories (2 Tbsp.)</string>
+    <string name="condlist">BBQ and other low-fat sauces and marinades, fat-free dressings, mustard, honey, pure fruit jams</string>
+    <string name="title_activity_cond">CondActivity</string>
+</resources>

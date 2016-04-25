@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shakabreaux.nutritionguide.ProteinActivity"
+    tools:showIn="@layout/activity_carb"
+    android:background="#965432">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="12"
+        android:rowCount="25">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carbTitle"
+            android:id="@+id/textView7"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carbdescrip"
+            android:id="@+id/textView8"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bagel"
+            android:id="@+id/textView9"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beans"
+            android:id="@+id/textView10"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bakedbeans"
+            android:id="@+id/textView11"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bread"
+            android:id="@+id/textView12"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cereal"
+            android:id="@+id/textView13"
+            android:layout_column="0"
+            android:layout_row="6"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/couscous"
+            android:id="@+id/textView14"
+            android:layout_column="0"
+            android:layout_row="7"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/engmuffin"
+            android:id="@+id/textView15"
+            android:layout_column="0"
+            android:layout_row="8"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hummus"
+            android:id="@+id/textView16"
+            android:layout_column="0"
+            android:layout_row="9"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lentil"
+            android:id="@+id/textView17"
+            android:layout_column="0"
+            android:layout_row="10"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oatmeal"
+            android:id="@+id/textView18"
+            android:layout_column="0"
+            android:layout_row="11"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pancakes"
+            android:id="@+id/textView19"
+            android:layout_column="0"
+            android:layout_row="12"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pasta"
+            android:id="@+id/textView20"
+            android:layout_column="0"
+            android:layout_row="13"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pita"
+            android:id="@+id/textView21"
+            android:layout_column="0"
+            android:layout_row="14"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/potato"
+            android:id="@+id/textView22"
+            android:layout_column="0"
+            android:layout_row="15"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quinoa"
+            android:id="@+id/textView23"
+            android:layout_column="0"
+            android:layout_row="16"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rice"
+            android:id="@+id/textView24"
+            android:layout_column="0"
+            android:layout_row="17"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sweetpotato"
+            android:id="@+id/textView25"
+            android:layout_column="0"
+            android:layout_row="18"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tortcorn"
+            android:id="@+id/textView26"
+            android:layout_column="0"
+            android:layout_row="19"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tortwheat"
+            android:id="@+id/textView27"
+            android:layout_column="0"
+            android:layout_row="20"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ebe1c3" />
+
+        <Space
+            android:layout_width="10px"
+            android:layout_height="10px"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_row="21"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/retPlanBtn"
+            android:id="@+id/retPlan"
+            android:layout_columnSpan="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="22"
+            android:background="#31cba7" />
+
+    </GridLayout>
+</RelativeLayout>
+
